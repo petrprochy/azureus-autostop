@@ -168,7 +168,7 @@ public class AutoStopPlugin implements Plugin {
 
             // : prepare our utilities
             LocaleUtilities lu = AutoStopPlugin.plugin ().getPluginInterface ().getUtilities ().getLocaleUtilities ();
-            Display display = AutoStopPlugin.plugin ().getPluginInterface ().getUIManager ().getSWTManager ().getDisplay ();
+            Display display = Display.getDefault();
 
             // : if there is only one ratio for all selected downloads, default to it
             String ratio = getDownloadRatio (downloads);
